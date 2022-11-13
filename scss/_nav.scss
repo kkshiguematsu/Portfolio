@@ -1,0 +1,30 @@
+@use "variables";
+
+// ============== NAVBAR ==============
+#nav-container{
+    padding: 0;
+}
+
+.navbar{
+    background-color: variables.$primary;
+}
+
+.navbar a{
+    color: white;
+    border-bottom: 2.5px solid variables.$primary;
+    // padding-top: 1rem;
+    // padding-bottom: 1rem;
+}
+
+.navbar a:hover{
+    color: rgb(22, 40, 121);
+    border-bottom: 2.5px solid white;
+}
+
+.container-fluid .navbar-brand{
+    padding: .83rem 1rem;
+}
+
+.navbar-nav .custom-link{
+    padding: 1rem 1rem;
+}

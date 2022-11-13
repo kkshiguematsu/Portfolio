@@ -1,0 +1,72 @@
+@use "variables";
+
+// ============== FOOTER ==============
+.footer-area{
+    background-color: variables.$custom-grey;
+    padding-top: 2rem; 
+    padding-bottom: 2rem; 
+    color: variables.$gray-600;
+}
+
+.footer-midia{
+    height: 100%;
+}
+
+.footer-midia div div a{
+    text-decoration: none;
+    border: 1px solid variables.$gray-600;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color variables.$transition-time,
+                border variables.$transition-time;
+}
+
+.footer-midia div div a:hover{
+    text-decoration: none;
+    border: 1px solid variables.$primary;
+    // background-color: variables.$gray-800;
+    border-radius: 50%;
+    i{
+        color: variables.$primary;
+    }
+    
+}
+
+.footer-midia div div a i{
+    font-size: 1.5rem;
+    color: variables.$gray-600;
+    transition: color variables.$transition-time;
+}
+
+.footer-contato{
+    margin-top: 2em;
+    padding-top: 2rem;
+    border-top: 0.1rem solid variables.$primary;
+    text-align: center;
+}
+
+.footer-contato i{
+    font-size: 1rem;
+}
+
+.footer-contato-icons{
+    padding: 0;
+    margin: 0;
+}
+
+.credit-container{
+    background-color: black;
+    padding: 0.5rem 0 0.5rem 0;
+    margin: 0;
+}
+
+.p-footer{
+    color: variables.$gray-500;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}

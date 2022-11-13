@@ -1,0 +1,16 @@
+@use "variables";
+
+@import "nav";
+@import "contato";
+@import "footer";
+
+
+
+$body-bg: variables.$gray-600;
+
+
+
+
+
+@import "../bootstrap/scss/bootstrap.scss";
+

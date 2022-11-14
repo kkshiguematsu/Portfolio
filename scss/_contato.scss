@@ -1,2 +1,91 @@
 @use "variables";
 
+$backgrond-color-container: white;
+
+.contato-main {
+    margin-top: 5rem ;
+    width: 100%;
+    height: 100vh;
+}
+.contato-main > div{
+    box-shadow: 0px 0px 69px -16px rgba(0,0,0,0.75);
+}
+
+.contato-main-form{
+    background-color: $backgrond-color-container;
+    form {
+        div{
+            padding-bottom: 1rem;
+            textarea{
+                resize: none;
+            }
+            
+        }
+        .form_title{
+            color: white;
+            padding: 1.5rem;
+            background-color: variables.$secondary;
+            box-shadow: 0px 0px 69px -16px rgba(0,0,0,0.75);
+        }
+        input, textarea {
+            border: 0;
+            border-bottom: 1.5px solid grey;
+            border-radius: 0;
+            background-color: $backgrond-color-container;
+            transition: border-bottom variables.$transition-time;
+        }
+        input:focus, textarea:focus{
+            border-color: 0;
+            box-shadow: 0px 0px 0px;
+            outline: 0 none;
+            border-bottom: 1.5px solid variables.$primary;
+            background-color: $backgrond-color-container;
+        }
+        .btn-primary{
+            border: 1px solid variables.$secondary;
+            background-color: variables.$secondary;
+            transition: variables.$transition-time;
+        }
+        .btn-primary:hover{
+            border: 1px solid variables.$primary;
+            background-color: variables.$primary;
+        }
+    } 
+}
+
+.contato-main-info{
+    width: auto;
+    height: auto;
+    position: relative;
+    color: white;
+    background-color: variables.$secondary;
+    
+    .row{
+        height: 100%;
+        .contato-main-info-informacao{
+            height: 50%;
+            // div h5, div span{
+            //     // font-size: ;
+            // }
+        }
+        .contato-main-info-redes{
+            height: 50%;
+            div{
+                height: 100%;
+                a {
+                    color: white;
+                    border-bottom: 1px solid variables.$secondary;
+                    border: 20%;
+                    transition: variables.$transition-time;
+                    i{
+                        font-size: 2rem;
+                        gap: 1.5rem;
+                    }
+                }
+                a:hover{
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
+    }
+}

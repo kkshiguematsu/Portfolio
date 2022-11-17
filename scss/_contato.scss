@@ -24,7 +24,7 @@ $backgrond-color-container: white;
         .form_title{
             color: white;
             padding: 1.5rem;
-            background-color: variables.$secondary;
+            background-color: variables.$cyan_dark;
             box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
         }
         input, textarea {
@@ -38,17 +38,17 @@ $backgrond-color-container: white;
             border-color: 0;
             box-shadow: 0px 0px 0px;
             outline: 0 none;
-            border-bottom: 1.5px solid variables.$primary;
+            border-bottom: 1.5px solid variables.$cyan_light;
             background-color: $backgrond-color-container;
         }
         .btn-primary{
-            border: 1px solid variables.$secondary;
-            background-color: variables.$secondary;
+            border: 1px solid variables.$cyan_dark;
+            background-color: variables.$cyan_dark;
             transition: variables.$transition-time;
         }
         .btn-primary:hover{
-            border: 1px solid variables.$primary;
-            background-color: variables.$primary;
+            border: 1px solid variables.$cyan_light;
+            background-color: variables.$cyan_light;
         }
     } 
 }
@@ -58,7 +58,7 @@ $backgrond-color-container: white;
     height: auto;
     position: relative;
     color: white;
-    background-color: variables.$secondary;
+    background-color: variables.$cyan_dark;
     
     .row{
         height: 100%;
@@ -74,7 +74,7 @@ $backgrond-color-container: white;
                 height: 100%;
                 a {
                     color: white;
-                    border-bottom: 1px solid variables.$secondary;
+                    border-bottom: 1px solid variables.$cyan_dark;
                     border: 20%;
                     transition: variables.$transition-time;
                     i{

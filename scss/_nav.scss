@@ -6,20 +6,21 @@
 }
 
 .navbar{
-    background-color: variables.$secondary;
+    background-color: white;
+    border-radius: 0 0 3px 3px;
     box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
 }
 
 .navbar a{
-    color: white;
-    border-bottom: 2.5px solid variables.$secondary;
+    color:  variables.$cyan_dark;
+    border-bottom: 2.5px solid white;
     // padding-top: 1rem;
     // padding-bottom: 1rem;
 }
 
 .navbar a:hover{
-    color: white;
-    border-bottom: 2.5px solid white;
+    color: variables.$cyan_dark;
+    border-bottom: 2.5px solid variables.$cyan_dark;
 }
 
 .container-fluid .navbar-brand{

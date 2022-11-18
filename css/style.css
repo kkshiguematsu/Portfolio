@@ -1,10 +1,18 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+body {
+  width: 100%;
+  height: 100vh;
+}
+
 #nav-container {
   padding: 0;
 }
 
 .navbar {
+  width: 100%;
   background-color: white;
+  font-family: "Poppins", sans-serif;
   border-radius: 0 0 3px 3px;
   box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.75);
 }
@@ -15,22 +23,30 @@
 }
 
 .navbar a:hover {
-  color: #4a7988;
-  border-bottom: 2.5px solid #4a7988;
+  color: white;
+  background-color: #40aec3;
+  border-bottom: 2.5px solid #40aec3;
 }
 
 .container-fluid .navbar-brand, .container-xxl .navbar-brand, .container-xl .navbar-brand, .container-lg .navbar-brand, .container-md .navbar-brand, .container-sm .navbar-brand {
-  padding: 0.83rem 1rem;
+  padding: 0.8125rem 1rem;
 }
 
 .navbar-nav .custom-link {
   padding: 1rem 1rem;
 }
 
+.active {
+  color: white !important;
+  background-color: #40aec3 !important;
+  border-bottom: 2.5px solid #40aec3 !important;
+}
+
 .contato-main {
   margin-top: 4rem;
   width: 100%;
   height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
 
 .contato-main > div {
@@ -49,7 +65,7 @@
 .contato-main-form form .form_title {
   color: white;
   padding: 1.5rem;
-  background-color: #4a7988;
+  background-color: #40aec3;
   box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
 }
 .contato-main-form form input, .contato-main-form form textarea {
@@ -67,13 +83,13 @@
   background-color: white;
 }
 .contato-main-form form .btn-primary {
-  border: 1px solid #4a7988;
-  background-color: #4a7988;
+  border: 1px solid #40aec3;
+  background-color: #40aec3;
   transition: 0.5s;
 }
 .contato-main-form form .btn-primary:hover {
-  border: 1px solid #40aec3;
-  background-color: #40aec3;
+  border: 1px solid #4a7988;
+  background-color: #4a7988;
 }
 
 .contato-main-info {
@@ -81,7 +97,7 @@
   height: auto;
   position: relative;
   color: white;
-  background-color: #4a7988;
+  background-color: #40aec3;
 }
 .contato-main-info .row {
   height: 100%;
@@ -97,7 +113,7 @@
 }
 .contato-main-info .row .contato-main-info-redes div a {
   color: white;
-  border-bottom: 1px solid #4a7988;
+  border-bottom: 1px solid #40aec3;
   border: 20%;
   transition: 0.5s;
 }
@@ -181,6 +197,11 @@
   padding: 0;
 }
 
+.row {
+  padding: 0;
+  margin: 0;
+}
+
 .portfolio {
   position: relative;
   width: 100%;
@@ -219,6 +240,22 @@
   color: white;
   border: 3px solid #40aec3;
   background-color: #40aec3;
+}
+
+.sobre {
+  padding: 5rem 5rem 5rem 5rem;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+
+.sobre_img {
+  position: relative;
+}
+.sobre_img .gato_img {
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*!

@@ -1,10 +1,16 @@
 @use "variables";
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 // main {
 //     width: 100%;
 //     min-height: 100vh;
     
 // }
+
+.row{
+    padding: 0;
+    margin: 0;
+}
 
 .portfolio{
     position: relative;
@@ -47,19 +53,20 @@
     }
 }
 
+.sobre{
+    padding: 5rem 5rem 5rem 5rem;
+    font-family: variables.$font_famaly;
+    background-color: white;
+}
 
-// .portfolio_info{
-//     position: relative;
-//     width: 70%;
-//     height: 70vh;
-//     left: 30%;
-//     background-color: green;
-    
-    
-//     .portfolio_foto{
-//         position: absolute;
-//         width: 30%;
-//         background-color: blue;
-//     }
-// }
+.sobre_img{
+    position: relative;
+    // width: ;
 
+    .gato_img{
+        // position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}

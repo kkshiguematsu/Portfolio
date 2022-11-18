@@ -4,113 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; URL='./html/inicio.html'"/>
     <title>Portfólio</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./fontawesome/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
-    <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <nav class="navbar fixed-top navbar-expand-sm" id="nav-container">
-        <div class="container-fluid">
-            <a class="navbar-brand" id="teste" href="./index.html">Portfólio</a>
-            <button class="navbar-toggler" type="button" data data-bs-toggle="collapse" data-bs-target="#navbar-links"aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                <div class="navbar-nav">
-                    <a href="./index.html" class="nav-link custom-link" id="nav-sobre" >Início</a>
-                    <a href="./html/formacao.html" class="nav-link custom-link" id="nav-formacao">Formação</a>
-                    <a href="./html/atuacao.html" class="nav-link custom-link" id="nav-atuacao">Atuação</a>
-                    <a href="./html/projetos.html" class="nav-link custom-link" id="nav-projetos">Projetos</a>
-                    <a href="./html/contato.html" class="nav-link custom-link" id="nav-contato">Contato</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <header></header>
-    <main>
-        <section class="portfolio d-flex justify-content-center align-items-center">
-            <img class="portfolio_img_background" src="./img/portfolio_wallpaper.jpg" alt="Wallpaper.jpg">
-            <div class="portfolio_entrada">
-                <div class="row">
-                    <div class="col-md-12 d-flex justify-content-center align-items-center mb-2">
-                        <h4>Um Simples... Portfólio</h1>
-                    </div>
-                    <div class="col-md-12 d-flex justify-content-center align-items-center">
-                        <a class="botao_sobre" href="#sobre">Sobre Mim</a>
-                    </div>
-                </div> 
-            </div>
-        </section>
-        <section class="" id="sobre">
-            
-        </section>
-        
-
-        <!-- <div class="portfolio_info col-md-8">
-                    <div class="portfolio_foto col-md-4">
-                        <p>aaaaaaa</p>
-                    </div>  
-                    <p>aaaaaaa</p>
-                </div> -->
-    </main>
-    <footer>
-        <div class="footer-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="footer-midia d-flex justify-content-center align-items-center">
-                            <div class="row">
-                                <div class="col-sm-12 gap-1 d-flex justify-content-center">
-                                    <a href="#" target="_blank"><i class="fa-brands fa-twitter">    </i></a>
-                                    <a href="https://www.instagram.com/kkshigmtsu/" target="_blank"><i class="fa-brands fa-instagram">  </i></a>
-                                    <a href="https://www.linkedin.com/in/kassianoshiguematsu/" target="_blank"><i class="fa-brands fa-linkedin">   </i></a>
-                                    <a href="https://github.com/kkshiguematsu" target="_blank"><i class="fa-brands fa-github">     </i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="footer-contato d-flex justify-content-center">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <h6>Contato</h6>
-                                </div>
-                                <div class="footer-contato-icons col-sm-12  d-flex justify-content-center">
-                                    <div class="row d-flex align-items-center">
-                                        <div class="col-sm-4">
-                                            <i class="fa-solid fa-location-dot"></i>
-                                            <span>Toledo, Paraná</span>
-                                        </div>           
-                                        <div class="col-sm-4">
-                                            <i class="fa-solid fa-phone"></i>
-                                            <span>(45) 986020822</span>
-                                        </div>                                        
-                                        <div class="col-sm-4 d-flex justify-content-center align-items-center gap-1">
-                                            <i class="fa-solid fa-envelope" id="email-contato"> </i> 
-                                            <span>kassiano.e@hotmail.com</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="credit-container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 d-flex justify-content-center">
-                        <p class="p-footer">Created by: Kassiano Eiti Shigueamtsu</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+<body onload="carregar_Nav();carregar_Footer();verifica_Active();">
+    
 </body>
 </html>

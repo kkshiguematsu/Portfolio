@@ -8,25 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../fontawesome/css/all.min.css">
 </head>
-<body>
-    <script src="../bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <nav class="navbar fixed-top navbar-expand-sm" id="nav-container">
-        <div class="container-fluid">
-            <a class="navbar-brand" id="teste" href="../index.html">Portfólio</a>
-            <button class="navbar-toggler" type="button" data data-bs-toggle="collapse" data-bs-target="#navbar-links"aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                <div class="navbar-nav">
-                    <a href="../index.html#sobre" class="nav-link custom-link" id="nav-sobre" >Sobre</a>
-                    <a href="./formacao.html" class="nav-link custom-link" id="nav-formacao">Formação</a>
-                    <a href="./atuacao.html" class="nav-link custom-link" id="nav-atuacao">Atuação</a>
-                    <a href="./projetos.html" class="nav-link custom-link" id="nav-projetos">Projetos</a>
-                    <a href="./contato.html" class="nav-link custom-link" id="nav-contato">Contato</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+<body onload="carregar_Nav();carregar_Footer();verifica_Active();">
     <header></header>
     
     <main>
@@ -86,7 +68,6 @@
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -94,59 +75,10 @@
     </main>
 
     <footer>
-        <div class="footer-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="footer-midia d-flex justify-content-center align-items-center">
-                            <div class="row">
-                                <div class="col-sm-12 gap-1 d-flex justify-content-center">
-                                    <a href="#" target="_blank"><i class="fa-brands fa-twitter">    </i></a>
-                                    <a href="#" target="_blank"><i class="fa-brands fa-instagram">  </i></a>
-                                    <a href="https://www.linkedin.com/in/kassianoshiguematsu/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                                    <a href="https://github.com/kkshiguematsu" target="_blank"><i class="fa-brands fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="footer-contato d-flex justify-content-center">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <h6>Contato</h6>
-                                </div>
-                                <div class="footer-contato-icons col-sm-12  d-flex justify-content-center">
-                                    <div class="row d-flex align-items-center">
-                                        <div class="col-sm-4">
-                                            <i class="fa-solid fa-location-dot"></i>
-                                            <span>Toledo, Paraná</span>
-                                        </div>           
-                                        <div class="col-sm-4">
-                                            <i class="fa-solid fa-phone"></i>
-                                            <span>(45) 986020822</span>
-                                        </div>                                        
-                                        <div class="col-sm-4 d-flex justify-content-center align-items-center gap-1">
-                                            <i class="fa-solid fa-envelope" id="email-contato"> </i> 
-                                            <span>kassiano.e@hotmail.com</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="credit-container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 d-flex justify-content-center">
-                        <p class="p-footer">Created by: Kassiano Eiti Shigueamtsu</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </footer>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/meu_portfolio.js"></script>
 </body>
 </html>

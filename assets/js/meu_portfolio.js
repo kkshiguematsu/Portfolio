@@ -6,11 +6,15 @@ function carregar_Nav(){
 }
 
 function verifica_Active(){
-    // var path = window.location.path; 
-    // // because the 'href' property of the DOM element is the absolute path
-    // $('.navbar-nav a').each(function() {
-    //   if (this.href === path) {
-    //     $(this).addClass('active');
-    //   }
-    // });
+    var path = './'+location.pathname.split("/")[2]; 
+    $(document).ready(function(){
+        console.log(path); // Debug
+        $('.navbar-nav a').each(function() {
+            console.log($(this).attr('href')); // Debug
+            if ($(this).attr('href') == path) {
+                $(this).addClass('active');
+            }
+        });
+    });
+
 }

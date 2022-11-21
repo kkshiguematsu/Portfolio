@@ -25,33 +25,39 @@
     box-shadow: 0px 0px 20px 0px variables.$cyan_dark;
 }
 
-.sobre_texto, .sobre_img{
-    width: 50% !important;
-    padding: 2.5rem 3.5rem !important;
-    border: 1px solid white;
-    border-radius: 10px;
+.sobre_texto, 
+.sobre_card{
+    // width: 50% !important;
+    padding: 2.5rem 2rem !important;
+    border-radius: variables.$global_border_radius;
     text-justify: inter-word;
     transition: variables.$transition-time;
 }
 
-.sobre_texto:hover{
-    border: 1px solid grey;
-    box-shadow: 0px 0px 10px 0px black;
-} .sobre_img:hover{
-    border: 1px solid grey;
-    box-shadow: 0px 0px 10px 0px black;
-}
 
 
-.sobre_img{
-    // position: relative;
-    // width: ;
+.sobre_card{
+    width: 100%;
+    position: relative;
     
-
-    .gato_img{
-        // position: absolute;
-        top: 0;
-        left: 0;
-        object-fit: cover;
+    .sobre_card_lista{
+        border-radius: variables.$global_border_radius;
+        transition: variables.$transition-time;
     }
+    
+    .sobre_img{
+        $tamanho_img: 250px;
+        width: $tamanho_img;
+        height: $tamanho_img;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        border-right: 5px solid variables.$cyan_light;
+        border-bottom: 5px solid variables.$cyan_light;
+        transition: variables.$transition-time;
+        // border-radius: variables.$global_border_radius;
+    }
+}
+.sobre_texto:hover,
+.sobre_img:hover{
+    box-shadow: 0px 0px 10px 0px grey;
 }

@@ -7,50 +7,10 @@ $cyan_light: #40aec3;
 $cyan_dark: #4a7988;
 $my_black: #181920;
 $my_grey: #25242b;
+
 $font_famaly: 'Poppins', sans-serif;
 
+$global_border_radius: 5px;
+
 $transition-time: 0.5s;
-
-.title_main{
-    position: relative;
-    font-size: 2rem;
-    padding: 0.25em 1em;
-    // text-transform: uppercase;
-    font-family: $font_famaly;
-    color: black;
-    transition: $transition-time;
-}
-
-.title_main:hover{
-    color: white;
-    background-color: $cyan_light; 
-    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.75);
-}
-
-.title_main::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    border-bottom: 1px solid $cyan_light;
-    right: 0.5rem;
-    bottom: 0.5rem;
-    transition: $transition-time;
-}
-
-.title_main:hover::before{
-    border-bottom: 1px solid white;
-}
-
-.title_main::after{
-    content: '';
-    position: absolute;
-    height: 100%;
-    border-left: 1px solid $cyan_light;
-    left: 1rem;
-    transition: $transition-time;
-}
-
-.title_main:hover::after{
-    border-left: 1px solid white;
-}
 

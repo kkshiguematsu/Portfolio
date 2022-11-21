@@ -11,12 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <!-- <body onload="carregar_Nav();carregar_Footer();verifica_Scroll();"> -->
-<body onload="carregar_Nav();carregar_Footer();" data-bs-spy="scroll" data-bs-target="#nav_scroll">
+<body  onload="carregar_Nav();carregar_Footer();">
     <header>
         
     </header>
-
-    <main>
+    <!-- data-bs-spy="scroll" data-bs-target="#nav_scroll" -->
+    <main >
 
         <section class="portfolio d-flex justify-content-center align-items-center" id="inicio">
             <img class="portfolio_img_background" src="../assets/img/portfolio_wallpaper.jpg" alt="Wallpaper.jpg">
@@ -31,13 +31,14 @@
                 </div> 
             </div>
         </section>
+
         <section class="sobre d-flex justify-content-center align-items-center" id="sobre">
             <div class="container-fluid">
                 <div class="sobre_container row d-flex justify-content-evenly ">
-                    <div class="col-sm-12 d-flex justify-content-center">
-                        <h2 class="sobre_title title_main" id="sobre">Sobre</h2>
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <h2 class="sobre_title title_main">Sobre <span class="span_destaque">Mim</span></h2>
                     </div>
-                    <div class="sobre_texto col-sm-6 d-flex flex-column mt-4">
+                    <div class="sobre_texto col-md-6 d-flex align-items-center mt-4">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Sed suscipit a nesciunt, error iusto officiis explicabo beatae odio impedit 
@@ -48,44 +49,42 @@
                             quia molestias quod voluptate debitis cupiditate quis facere dignissimos tempora!
                             Animi.
                         </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Sed suscipit a nesciunt, error iusto officiis explicabo beatae odio impedit 
-                            quia molestias quod voluptate debitis cupiditate quis facere dignissimos tempora!
-                            Animi.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Sed suscipit a nesciunt, error iusto officiis explicabo beatae odio impedit 
-                            quia molestias quod voluptate debitis cupiditate quis facere dignissimos tempora!
-                            Animi.
-                        </p>
+                        
                     </div>
-                    <div class="sobre_img col-sm-6 d-flex mt-4">
-                        <!-- <img class="gato_img" src="../assets/img/gatos_wallpaper.jpg" alt="gato_wallpaper"> -->
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Sed suscipit a nesciunt, error iusto officiis explicabo beatae odio impedit 
-                            quia molestias quod voluptate debitis cupiditate quis facere dignissimos tempora!
-                            Animi.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Sed suscipit a nesciunt, error iusto officiis explicabo beatae odio impedit 
-                            quia molestias quod voluptate debitis cupiditate quis facere dignissimos tempora!
-                            Animi.
-                        </p>
+                    <div class="sobre_card col-md-6 d-flex justify-content-center align-items-center mt-4">
+                        <div class="row">
+                            <div class="sobre_card_img col-md-6 d-flex justify-content-center position-relative mb-3">
+                                <img class="sobre_img" src="../assets/img/m.jpg" alt="me.jpg"> 
+                            </div>
+                            <div class="sobre_card_lista col-md-6 d-flex justify-content-center">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><span class="span_destaque">Idade:</span> 25 Anos</li>
+                                    <li class="list-group-item"><span class="span_destaque">Idioma:</span> Português</li>
+                                    <li class="list-group-item"><span class="span_destaque">aaa:</span> aaaa</li>
+                                    <li class="list-group-item"><span class="span_destaque">aaa:</span> aaaaaaa</li>
+                                    <li class="list-group-item"><span class="span_destaque">aaa:</span> aaa</li>
+                                  </ul>
+                            </div>
+                            <div class="col-md-12 d-flex justify-content-center">
+                                <h5>aaaaaaaaaa</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="formacao d-flex justify-content-center align-items-center" id="formacao">
         <div class="formacao_main ">
                 <div class="container">
                     <div class="row">
                         <div class="formacao_title col-md-12 d-flex justify-content-center">
-                            <h2 class="title_main">Formação Acadêmica</h2>
+                            <h2 class="title_main">Formação <span class="span_destaque">Acadêmica</span></h2>
                         </div>
                         <div class="formacao_coluna col-md-4">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <img class="formacao_img" src="../assets/img/gatos_wallpaper.jpg" alt="me.jpg">
+                                    
                                 </div>
                                 <div class="col-md-12">
                                     <p>aaaaaaaaa</p>
@@ -102,7 +101,6 @@
                                     <p>aaaaaaaaa</p>
                                 </div>
                             </div>
-                            
                         </div>
                         <div class="formacao_info col-md-8 d-flex align-items-center">
                             <div class="row">
@@ -122,11 +120,46 @@
                 </div>
             </div>
         </section>
+
         <section class="atuacao d-flex justify-content-center align-items-center" id="atuacao">
             <h2 class="title_main">Atuacao</h2>
         </section>
+
         <section class="projetos d-flex justify-content-center align-items-center" id="projetos">
-            <h2 class="title_main">Projetos</h2>
+            <div class="projetos_main">
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-center mb-3">
+                        <h2 class="title_main">Projetos</h2>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center mb-3">
+                        <div class="card">
+                            <img src="../assets/img/projeto_1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                              <a class="btn btn-outline-primary" href="#">Saiba mais</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center mb-3">
+                        <div class="card">
+                            <img src="../assets/img/projeto_2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                              <a class="btn btn-outline-primary" href="#">Saiba mais</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center mb-3">
+                        <div class="card">
+                            <img src="../assets/img/projeto_3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                              <a class="btn btn-outline-primary" href="#">Saiba mais</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>

@@ -15,7 +15,6 @@ function verifica_Active(){
             }
         });
     });
-
 }
 
 function verifica_Scroll(){

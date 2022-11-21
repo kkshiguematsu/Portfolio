@@ -10,14 +10,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<body onload="carregar_Nav();carregar_Footer();verifica_Active();">
+<!-- <body onload="carregar_Nav();carregar_Footer();verifica_Scroll();"> -->
+<body onload="carregar_Nav();carregar_Footer();" data-bs-spy="scroll" data-bs-target="#nav_scroll">
     <header>
         
     </header>
 
     <main>
 
-        <section class="portfolio d-flex justify-content-center align-items-center">
+        <section class="portfolio d-flex justify-content-center align-items-center" id="inicio">
             <img class="portfolio_img_background" src="../assets/img/portfolio_wallpaper.jpg" alt="Wallpaper.jpg">
             <div class="portfolio_entrada">
                 <div class="row">
@@ -30,13 +31,13 @@
                 </div> 
             </div>
         </section>
-        <section class="sobre" id="sobre">
+        <section class="sobre d-flex justify-content-center align-items-center" id="sobre">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="sobre_titulo col-md-12 d-flex justify-content-center">
-                        <h3 class="sobre_title" id="sobre">Sobre</h3>
+                <div class="sobre_container row d-flex justify-content-evenly ">
+                    <div class="col-sm-12 d-flex justify-content-center">
+                        <h2 class="sobre_title title_main" id="sobre">Sobre</h2>
                     </div>
-                    <div class="sobre_texto col-md-6 d-flex flex-column justify-content-center mt-4">
+                    <div class="sobre_texto col-sm-6 d-flex flex-column mt-4">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Sed suscipit a nesciunt, error iusto officiis explicabo beatae odio impedit 
@@ -58,11 +59,74 @@
                             Animi.
                         </p>
                     </div>
-                    <div class="sobre_img col-md-6 d-flex justify-content-center mt-4">
-                        <img class="gato_img" src="../assets/img/gatos_wallpaper.jpg" alt="gato_wallpaper">
+                    <div class="sobre_img col-sm-6 d-flex mt-4">
+                        <!-- <img class="gato_img" src="../assets/img/gatos_wallpaper.jpg" alt="gato_wallpaper"> -->
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Sed suscipit a nesciunt, error iusto officiis explicabo beatae odio impedit 
+                            quia molestias quod voluptate debitis cupiditate quis facere dignissimos tempora!
+                            Animi.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Sed suscipit a nesciunt, error iusto officiis explicabo beatae odio impedit 
+                            quia molestias quod voluptate debitis cupiditate quis facere dignissimos tempora!
+                            Animi.
+                        </p>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="formacao d-flex justify-content-center align-items-center" id="formacao">
+        <div class="formacao_main ">
+                <div class="container">
+                    <div class="row">
+                        <div class="formacao_title col-md-12 d-flex justify-content-center">
+                            <h2 class="title_main">Formação Acadêmica</h2>
+                        </div>
+                        <div class="formacao_coluna col-md-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img class="formacao_img" src="../assets/img/gatos_wallpaper.jpg" alt="me.jpg">
+                                </div>
+                                <div class="col-md-12">
+                                    <p>aaaaaaaaa</p>
+                                    <p>aaaaaaaaa</p>
+                                    <p>aaaaaaaaa</p>
+                                    <p>aaaaaaaaa</p>
+                                    <p>aaaaaaaaa</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <p>aaaaaaaaa</p>
+                                    <p>aaaaaaaaa</p>
+                                    <p>aaaaaaaaa</p>
+                                    <p>aaaaaaaaa</p>
+                                    <p>aaaaaaaaa</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="formacao_info col-md-8 d-flex align-items-center">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4>Teste</h4>
+                                </div>
+                                <div class="teste col-md-12">
+                                    <p>aaaaaaaaa</p>
+                                        <p>aaaaaaaaa</p>
+                                        <p>aaaaaaaaa</p>
+                                        <p>aaaaaaaaa</p>
+                                        <p>aaaaaaaaa</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="atuacao d-flex justify-content-center align-items-center" id="atuacao">
+            <h2 class="title_main">Atuacao</h2>
+        </section>
+        <section class="projetos d-flex justify-content-center align-items-center" id="projetos">
+            <h2 class="title_main">Projetos</h2>
         </section>
 
     </main>
@@ -70,7 +134,7 @@
         
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="../bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/meu_portfolio.js"></script>
 </body>

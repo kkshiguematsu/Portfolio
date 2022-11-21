@@ -3,13 +3,22 @@
 
 body{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 @import "nav";
+@import "inicio";
+@import "sobre";
+@import "formacao";
+@import "atuacao";
+@import "projetos";
 @import "contato";
 @import "footer";
-@import "sobre";
+
+section{
+    width: 100%;
+    min-height: 100vh;
+}
 
 $body-bg: variables.$gray-400;
 

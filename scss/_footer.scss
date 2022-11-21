@@ -3,7 +3,7 @@
 // ============== FOOTER ==============
 .footer-area{
     margin-top: 3rem;
-    background-color: variables.$custom-grey;
+    background-color: variables.$my_grey;
     padding-top: 2rem; 
     padding-bottom: 2rem; 
     color: variables.$gray-600;
@@ -28,11 +28,11 @@
 
 .footer-midia div div a:hover{
     text-decoration: none;
-    border: 1px solid variables.$primary;
+    border: 1px solid variables.$cyan_light;
     // background-color: variables.$gray-800;
     border-radius: 50%;
     i{
-        color: variables.$primary;
+        color: variables.$cyan_light;
     }
     
 }

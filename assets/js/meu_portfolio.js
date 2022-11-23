@@ -4,6 +4,9 @@ function carregar_Footer(){
 function carregar_Nav(){
     $('header').load('./header.html');
 }
+function carregar_projeto_canvas(){
+    $('#spa_projetos_canvas').load('./projeto_canvas.html');
+}
 
 function verifica_Active(){
     var path = './'+location.pathname.split("/")[2]; 

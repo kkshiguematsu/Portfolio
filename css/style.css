@@ -237,18 +237,22 @@ body {
 }
 
 .projetos {
-  background-color: white;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .card {
-  width: 15rem !important;
+  width: 20rem !important;
   box-shadow: 0 0 3px grey;
   transition: 0.5s;
 }
 .card img {
-  height: 18rem !important;
+  height: 15rem !important;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.card p {
+  margin: 0;
 }
 
 .card:hover {
@@ -485,29 +489,6 @@ section {
 .background_gradiente {
   width: 100%;
   min-height: 100vh;
-}
-
-.projetos {
-  font-family: "Poppins", sans-serif;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.card {
-  width: 20rem !important;
-  box-shadow: 0 0 3px grey;
-  transition: 0.5s;
-}
-.card img {
-  height: 15rem !important;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.card p {
-  margin: 0;
-}
-
-.card:hover {
-  box-shadow: 0 0 10px #40aec3;
 }
 
 /*!

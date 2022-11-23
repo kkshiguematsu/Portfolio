@@ -47,8 +47,6 @@ body{
     background-color: variables.$cyan_light !important;
 }
 
-
-
 section{
     width: 100%;
     min-height: 100vh;
@@ -111,33 +109,8 @@ section{
 
 // ==================== TESTE =======================
 
-.projetos{
-    font-family: variables.$font_famaly;
-    background-color: rgb(0, 0, 0,0);
-}
-    
-.card{
-    width: 20rem !important;
-    box-shadow: 0 0 3px grey;
-    transition: variables.$transition-time;
-
-    img{
-        height: 15rem !important;
-        object-fit: cover;
-    }
-    p{
-        margin: 0;
-    }
-}
-
-.card:hover{
-    box-shadow: 0 0 10px variables.$cyan_light;
-}
 
 
-.projetos_card_align_end{
-
-}
 
 @import "../bootstrap/scss/bootstrap.scss";
 

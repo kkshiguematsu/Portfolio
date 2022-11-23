@@ -1,0 +1,20 @@
+@use "variables";
+
+.projetos{
+    background-color: white;
+}
+    
+.card{
+    width: 15rem !important;
+    box-shadow: 0 0 3px grey;
+    transition: variables.$transition-time;
+
+    img{
+        height: 18rem !important;
+        object-fit: cover;
+    }
+}
+
+.card:hover{
+    box-shadow: 0 0 10px variables.$cyan_light;
+}

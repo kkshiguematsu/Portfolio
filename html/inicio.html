@@ -11,13 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <!-- <body onload="carregar_Nav();carregar_Footer();verifica_Scroll();"> -->
-<body  onload="carregar_Nav();carregar_Footer();">
+<body onload="carregar_Nav();carregar_Footer();">
     <header>
         
     </header>
-    <!-- data-bs-spy="scroll" data-bs-target="#nav_scroll" -->
-    <main >
-
+    <!-- data-bs-spy="scroll" data-bs-target="#nav_scroll -->
+    <main>
         <section class="portfolio d-flex justify-content-center align-items-center" id="inicio">
             <img class="portfolio_img_background" src="../assets/img/portfolio_wallpaper.jpg" alt="Wallpaper.jpg">
             <div class="portfolio_entrada">
@@ -54,7 +53,7 @@
                     <div class="sobre_card col-md-6 d-flex justify-content-center align-items-center mt-4">
                         <div class="row">
                             <div class="sobre_card_img col-md-6 d-flex justify-content-center position-relative mb-3">
-                                <img class="sobre_img" src="../assets/img/m.jpg" alt="me.jpg"> 
+                                <img class="sobre_img" src="../assets/img/me.jpg" alt="me.jpg"> 
                             </div>
                             <div class="sobre_card_lista col-md-6 d-flex justify-content-center">
                                 <ul class="list-group list-group-flush">
@@ -75,54 +74,137 @@
         </section>
 
         <section class="formacao d-flex justify-content-center align-items-center" id="formacao">
-        <div class="formacao_main ">
+            <div class="formacao_main">
                 <div class="container">
                     <div class="row">
                         <div class="formacao_title col-md-12 d-flex justify-content-center">
-                            <h2 class="title_main">Formação <span class="span_destaque">Acadêmica</span></h2>
+                            <h2 class="title_main">Formação</h2>
                         </div>
-                        <div class="formacao_coluna col-md-4">
+                        <div class="formacao_skills col-md-4">
                             <div class="row">
-                                <div class="col-md-12">
-                                    
+                                <div class="col-12">
+                                    <h4 class="formacoa_coluna_title">Skills</h4>
                                 </div>
-                                <div class="col-md-12">
-                                    <p>aaaaaaaaa</p>
-                                    <p>aaaaaaaaa</p>
-                                    <p>aaaaaaaaa</p>
-                                    <p>aaaaaaaaa</p>
-                                    <p>aaaaaaaaa</p>
-                                </div>
-                                <div class="col-md-12">
-                                    <p>aaaaaaaaa</p>
-                                    <p>aaaaaaaaa</p>
-                                    <p>aaaaaaaaa</p>
-                                    <p>aaaaaaaaa</p>
-                                    <p>aaaaaaaaa</p>
+                                <div class="col-12 d-flex flex-column gap-2">
+                                    <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapse_front_end" role="button" aria-expanded="false" aria-controls="collapse_front_end">
+                                        Front-End
+                                    </a>
+                                    <div class="collapse" id="collapse_front_end">
+                                        <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    HTML
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    CSS
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>    
+                                                </li>
+                                                <li class="list-group-item">
+                                                    JavaScript
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Bootstrap
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Sass
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                    <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapse_back_end" role="button" aria-expanded="false" aria-controls="collapse_back_end">
+                                        Back-End
+                                    </a>
+                                    <div class="collapse" id="collapse_back_end">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                Python
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                C/C++
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                MySQL
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="formacao_info col-md-8 d-flex align-items-center">
+                        <div class="formacao_escolar col-md-4">
                             <div class="row">
-                                <div class="col-md-12">
-                                    <h4>Teste</h4>
+                                <div class="col-12">
+                                    <h4>Formação Acadêmica</h4>
                                 </div>
-                                <div class="teste col-md-12">
-                                    <p>aaaaaaaaa</p>
-                                        <p>aaaaaaaaa</p>
-                                        <p>aaaaaaaaa</p>
-                                        <p>aaaaaaaaa</p>
-                                        <p>aaaaaaaaa</p>
+                                <div class="col-12">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <span class="position-absolute mt-3 top-0 start-0 translate-middle p-2 bg-primary border border-light rounded-circle"></span>
+                                            <p>Técnico em Informática </p>
+                                            <p class="text-muted">IFPR, Foz do Iguaçu</p>
+                                            <p class="text-white">2012 - 2014</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="position-absolute mt-3 top-0 start-0 translate-middle p-2 bg-primary border border-light rounded-circle"></span>
+                                            <p>Engenharia da Computação </p>
+                                            <p class="text-muted">UTFPR, Toledo</p>
+                                            <p class="text-white">2016 - atual</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                    
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formacao_atuacao col-md-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h4>Formação Acadêmica</h4>
+                                </div>
+                                <div class="col-12">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <span class="position-absolute mt-3 top-0 start-0 translate-middle p-2 bg-primary border border-light rounded-circle"></span>
+                                            <p> </p>
+                                            <p class="text-muted"></p>
+                                            <p class="span_destaque"></p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p></p>
+                                            <p class="text-muted"></p>
+                                            <p class="span_destaque"></p>
+                                        </li>
+                                        <li class="list-group-item">
+                                    
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="atuacao d-flex justify-content-center align-items-center" id="atuacao">
-            <h2 class="title_main">Atuacao</h2>
         </section>
 
         <section class="projetos d-flex justify-content-center align-items-center" id="projetos">
@@ -131,35 +213,80 @@
                     <div class="col-md-12 d-flex justify-content-center mb-3">
                         <h2 class="title_main">Projetos</h2>
                     </div>
-                    <div class="col-md-4 d-flex justify-content-center mb-3">
+                    <div class="col-sm-12 col-md-4 d-flex justify-content-center mb-3">
                         <div class="card">
                             <img src="../assets/img/projeto_1.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <p class="card-text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                              <a class="btn btn-outline-primary" href="#">Saiba mais</a>
+                                <h6><strong>Projeto final de curso IFPR</strong></h6>
+                                <p>Sistema de forum para assuntos relacionados a qualquer tipo de linguaguem de programação.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#html_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                    HTML
+                                </button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#css_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                    CSS
+                                </button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#php_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                    PHP
+                                </button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#mysql_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                    MySQL
+                                </button>
+                                <div class="offcanvas offcanvas-start" tabindex="-1" id="html_canvas" aria-labelledby="#html_canvas_label">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="html_canvas_label">HTML</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero illum reprehenderit quod. Id dolorum eum sunt dolorem eligendi similique, tempora fugiat minus tenetur iusto dolor numquam facere ullam placeat veritatis.
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 d-flex justify-content-center mb-3">
+                    <div class="col-sm-12 col-md-4 d-flex justify-content-center mb-3">
                         <div class="card">
                             <img src="../assets/img/projeto_2.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <p class="card-text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                              <a class="btn btn-outline-primary" href="#">Saiba mais</a>
+                                <p class="card-text">
+                                    <h6><strong>Portfólio</strong></h6>
+                                    <p>Este mesmo portfólio, utilizando técnologias como Bootstrap, Sass e métodos responsive</p>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#bootstrap_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                        Bootstrap
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#sass_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                        Sass
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#js_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                        JavaScript
+                                    </button>
+                                </p>
+                                
                             </div>
-                          </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 d-flex justify-content-center mb-3">
+                    <div class="col-sm-12 col-md-4 d-flex justify-content-center mb-3">
                         <div class="card">
                             <img src="../assets/img/projeto_3.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <p class="card-text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                              <a class="btn btn-outline-primary" href="#">Saiba mais</a>
+                                <h6 class="card-text"><strong>Calculadoura</strong></h6>
+                                <p>Calculadora feita baseada em métodos de Javascript para os cálculos e HTML/CSS para o Front.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#html_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                    HTML
+                                </button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#css_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                    CSS
+                                </button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#js_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                    JavaScript
+                                </button>
                             </div>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </section>
 
     </main>

@@ -10,22 +10,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<!-- <body onload="carregar_Nav();carregar_Footer();verifica_Scroll();"> -->
-<body onload="carregar_Nav();carregar_Footer();carregar_projeto_canvas();">
+<body data-bs-spy="scroll" data-bs-target="#nav_scroll"  data-bs-offset="100"  onload="carregar_Nav();carregar_Footer();carregar_projeto_canvas();">
+<!-- <body  onload="carregar_Nav();carregar_Footer();carregar_projeto_canvas();verifica_Active();"> -->
     <header>
         
     </header>
-    <!-- data-bs-spy="scroll" data-bs-target="#nav_scroll -->
-    <main>
+
+    <main >
         <section class="portfolio d-flex justify-content-center align-items-center" id="inicio">
             <img class="portfolio_img_background" src="../assets/img/portfolio_wallpaper.jpg" alt="Wallpaper.jpg">
             <div class="portfolio_entrada">
                 <div class="row">
                     <div class="col-md-12 d-flex justify-content-center align-items-center mb-2">
-                        <h4>Um Simples... Portfólio</h1>
+                        <h4>Kassiano <span class="span_destaque">Eiti</span> Shiguematsu</h4>
                     </div>
                     <div class="col-md-12 d-flex justify-content-center align-items-center">
-                        <a class="botao_sobre" href="#sobre">Sobre Mim</a>
+                        <a class="botao_sobre" href="./inicio.html">Sobre Mim</a>
                     </div>
                 </div> 
             </div>
@@ -35,37 +35,40 @@
             <div class="container-fluid">
                 <div class="sobre_container row d-flex justify-content-evenly ">
                     <div class="col-md-12 d-flex justify-content-center">
-                        <h2 class="sobre_title title_main">Sobre <span class="span_destaque">Mim</span></h2>
+                        <h2 class="title_main sobre_title ">Sobre <span class="span_destaque">Mim</span></h2>
                     </div>
-                    <div class="sobre_texto col-md-6 d-flex align-items-center mt-4">
+                    <div class="sobre_texto col-sm-12 col-md-12 col-lg-6  d-flex flex-column align-items-center mt-4">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Sed suscipit a nesciunt, error iusto officiis explicabo beatae odio impedit 
-                            quia molestias quod voluptate debitis cupiditate quis facere dignissimos tempora!
-                            Animi.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Sed suscipit a nesciunt, error iusto officiis explicabo beatae odio impedit 
-                            quia molestias quod voluptate debitis cupiditate quis facere dignissimos tempora!
-                            Animi.
+                            <span class="span_destaque">Amante</span> da área da tecnolgia desde criança, comecei a estudar desde cedo sobre. 
+                            Em 2012 comecei a cursar técnico de analise e desenvolvimento de sistemas no IFPR/Foz do Iguaçu,
+                            aprendendo a utilizar tecnologias como <span class="span_destaque"> HTML/CSS, PHP, MySQL, Java</span> e
+                            foi ai onde percebi que programação era minha área. 
+                        </p>
+                        <p>
+                            Em 2016 comecei então a minha graduação em Engenheiro da Computação na UTFPR/Toledo, 
+                            aprendendo ainda mais sobre programção utilizando <span class="span_destaque">C/C++, Python</span>.
+                        </p>
+                        <p>
+                            Atualmente estou focado para alcançar meu objetivo de se tornar um desenvolvedor Front-End,
+                            estudando aquilo que já tenho conhecimento como HTML/CSS mas também sobre tecnolgias <span class="span_destaque">Sass, React e Angular.</span> 
                         </p>
                         
                     </div>
-                    <div class="sobre_card col-md-6 d-flex justify-content-center align-items-center mt-4">
-                        <div class="row">
-                            <div class="sobre_card_img col-md-6 d-flex justify-content-center position-relative mb-3">
+                    <div class="sobre_card col-sm-12 col-md-12 col-lg-6  mt-4">
+                        <div class="row  d-flex justify-content-evenly align-items-center">
+                            <div class="sobre_card_img col-sm-12 col-md-4 col-lg-6 d-flex justify-content-center mb-3">
                                 <img class="sobre_img" src="../assets/img/me.jpg" alt="me.jpg"> 
                             </div>
-                            <div class="sobre_card_lista col-md-6 d-flex justify-content-center">
+                            <div class="sobre_card_lista col-sm-12 col-md-4 col-lg-6 d-flex justify-content-center align-items-center">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item"><span class="span_destaque">Idade:</span> 25 Anos</li>
                                     <li class="list-group-item"><span class="span_destaque">Idioma:</span> Português</li>
-                                    <li class="list-group-item"><span class="span_destaque">aaa:</span> aaaa</li>
-                                    <li class="list-group-item"><span class="span_destaque">aaa:</span> aaaaaaa</li>
-                                    <li class="list-group-item"><span class="span_destaque">aaa:</span> aaa</li>
+                                    <li class="list-group-item"><span class="span_destaque">Língua estrangeira:</span> Inglês</li>
+                                    <li class="list-group-item"><span class="span_destaque">Nacionalidade:</span> Brasileira</li>
                                   </ul>
                             </div>
                             <div class="col-md-12 d-flex justify-content-center">
-                                <h5>aaaaaaaaaa</h5>
+                                <h5>Kassiano Eiti Shiguematsu</h5>
                             </div>
                         </div>
                     </div>
@@ -80,12 +83,12 @@
                         <div class="formacao_title col-md-12 d-flex justify-content-center">
                             <h2 class="title_main">Formação</h2>
                         </div>
-                        <div class="formacao_skills col-md-4">
+                        <div class="formacao_skills col-sm-12 col-md-6 col-lg-4 ">
                             <div class="row">
                                 <div class="col-12">
-                                    <h4 class="formacoa_coluna_title">Skills</h4>
+                                    <h4 class="formacao_skills_title"><span class="border-bottom border-2 border-primary">Skills</span></h4>
                                 </div>
-                                <div class="col-12 d-flex flex-column gap-2">
+                                <div class="col-12 d-flex flex-column flex-grow-1 gap-2">
                                     <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapse_front_end" role="button" aria-expanded="false" aria-controls="collapse_front_end">
                                         Front-End
                                     </a>
@@ -151,21 +154,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="formacao_escolar col-md-4">
+                        <div class="formacao_escolar col-sm-12 col-md-6 col-lg-4 ">
                             <div class="row">
-                                <div class="col-12">
-                                    <h4>Formação Acadêmica</h4>
+                                <div class="col-12 d-flex justify-content-center">
+                                    <h4 class="formacao_escolar_title"><span class="border-bottom border-2 border-white">Formação Acadêmica</span></h4>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12 d-flex justify-content-center">
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">
-                                            <span class="position-absolute mt-3 top-0 start-0 translate-middle p-2 bg-primary border border-light rounded-circle"></span>
-                                            <p>Técnico em Informática </p>
+                                            <span class="position-absolute top-0 start-0 translate-middle p-2 bg-primary border border-light rounded-circle"></span>
+                                            <p>Técnico em Desenvolimento de Sistemas  </p>
                                             <p class="text-muted">IFPR, Foz do Iguaçu</p>
                                             <p class="text-white">2012 - 2014</p>
                                         </li>
                                         <li class="list-group-item">
-                                            <span class="position-absolute mt-3 top-0 start-0 translate-middle p-2 bg-primary border border-light rounded-circle"></span>
+                                            <span class="position-absolute top-0 start-0 translate-middle p-2 bg-primary border border-light rounded-circle"></span>
                                             <p>Engenharia da Computação </p>
                                             <p class="text-muted">UTFPR, Toledo</p>
                                             <p class="text-white">2016 - atual</p>
@@ -177,10 +180,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="formacao_atuacao col-md-4">
+                        <div class="formacao_atuacao col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-start" id="atuacao">
                             <div class="row">
                                 <div class="col-12">
-                                    <h4>Formação Acadêmica</h4>
+                                    <h4 class="formacao_atuacao_title"><span class="border-bottom border-2 border-white">Atuação Profissional</span></h4>
                                 </div>
                                 <div class="col-12">
                                     <ul class="list-group list-group-flush">
@@ -213,41 +216,41 @@
                     <div class="col-md-12 d-flex justify-content-center mb-3">
                         <h2 class="title_main">Projetos</h2>
                     </div>
-                    <div class="col-sm-12 col-md-4 d-flex justify-content-center mb-3">
+                    <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mb-3">
                         <div class="card">
                             <img src="../assets/img/projeto_1.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h6><strong>Projeto final de curso IFPR</strong></h6>
-                                <p>Sistema de forum para assuntos relacionados a qualquer tipo de linguaguem de programação.</p>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#html_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                <p class="mb-2">Sistema de forum para assuntos relacionados a qualquer tipo de linguaguem de programação.</p>
+                                <button type="button" class="btn btn-primary text-white" data-bs-toggle="offcanvas" data-bs-target="#html_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                     HTML
                                 </button>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#css_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                <button type="button" class="btn btn-primary text-white" data-bs-toggle="offcanvas" data-bs-target="#css_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                     CSS
                                 </button>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#php_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                <button type="button" class="btn btn-primary text-white" data-bs-toggle="offcanvas" data-bs-target="#php_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                     PHP
                                 </button>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#mysql_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                <button type="button" class="btn btn-primary text-white" data-bs-toggle="offcanvas" data-bs-target="#mysql_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                     MySQL
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 d-flex justify-content-center mb-3">
+                    <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mb-3">
                         <div class="card">
                             <img src="../assets/img/projeto_2.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text">
                                     <h6><strong>Portfólio</strong></h6>
-                                    <p>Este mesmo portfólio, utilizando técnologias como Bootstrap, Sass e métodos responsive</p>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#bootstrap_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                    <p class="mb-2">Este mesmo portfólio, utilizando técnologias como Bootstrap, Sass e métodos responsive</p>
+                                    <button type="button" class="btn btn-primary text-white" data-bs-toggle="offcanvas" data-bs-target="#bootstrap_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                         Bootstrap
                                     </button>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#sass_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                    <button type="button" class="btn btn-primary text-white" data-bs-toggle="offcanvas" data-bs-target="#sass_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                         Sass
                                     </button>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#js_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                    <button type="button" class="btn btn-primary text-white" data-bs-toggle="offcanvas" data-bs-target="#js_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                         JavaScript
                                     </button>
                                 </p>
@@ -255,19 +258,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 d-flex justify-content-center mb-3">
+                    <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mb-3">
                         <div class="card">
                             <img src="../assets/img/projeto_3.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h6 class="card-text"><strong>Calculadoura</strong></h6>
-                                <p>Calculadora feita baseada em métodos de Javascript para os cálculos e HTML/CSS para o Front.</p>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#html_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                <p class="mb-2">Calculadora feita baseada em métodos de Javascript para os cálculos e HTML/CSS para o Front.</p>
+                                <button type="button" class="btn btn-primary text-white" data-bs-toggle="offcanvas" data-bs-target="#html_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                     HTML
                                 </button>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#css_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                <button type="button" class="btn btn-primary text-white" data-bs-toggle="offcanvas" data-bs-target="#css_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                     CSS
                                 </button>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#js_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                <button type="button" class="btn btn-primary text-white" data-bs-toggle="offcanvas" data-bs-target="#js_canvas" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                     JavaScript
                                 </button>
                             </div>

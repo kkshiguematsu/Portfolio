@@ -9,14 +9,28 @@ function carregar_projeto_canvas(){
 }
 
 function verifica_Active(){
-    var path = './'+location.pathname.split("/")[2]; 
-    $(document).ready(function(){
-        console.log(path); // Debug
-        $('.navbar-nav a').each(function() {
-            if ($(this).attr('href') == path) {
-                $(this).addClass('active');
-            }
+    $(document).ready(function () {
+
+        // Scroll spy
+        $('body').scrollspy({
+            target: "#nav_scroll"
         });
+    
+        // Navbar fade
+        changeNavbar();
+    
+        $(window).scroll(function () {
+            changeNavbar();
+        });
+    
+        function changeNavbar() {
+            var navbar = $("#nav_scroll");
+            if ($(this).scrollTop() >= 100) {
+                navbar.addClass("active").removeClass("  ");
+            } else if ($(this).scrollTop() < 100) {
+                navbar.removeClass("active").addClass(" ");
+            }
+        }
     });
 }
 

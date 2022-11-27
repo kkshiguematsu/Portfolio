@@ -129,5 +129,14 @@ h1,h2,h3,h4,h5,h6{
 
 // ==================== TESTE =======================
 
+
+
+// $body-bg: blue !important;
+// $accordion-bg: bl;
+$accordion-button-focus-border-color: rgb(0,0,0,0) !important;
+$accordion-button-focus-box-shadow: rgb(0,0,0,0) !important;
+$accordion-button-active-bg: rgba(0, 0, 0, 0) !important;
+
+
 @import "../bootstrap/scss/bootstrap.scss";
 

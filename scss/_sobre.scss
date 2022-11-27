@@ -30,7 +30,11 @@
     // width: 50% !important;
     padding: 2.5rem 2rem !important;
     border-radius: variables.$global_border_radius;
-    text-justify: inter-word;
+    p{
+        text-indent: 3em;
+        text-align: justify;
+        text-justify: inter-word;
+    }
     transition: variables.$transition-time;
 }
 

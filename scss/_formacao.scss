@@ -51,7 +51,7 @@
     .list-group-item{
         color: $color_formacao_skills !important;
         background-color: $background_formacao_skills !important;
-        border-bottom: 1px solid grey;
+        border-bottom: 1px solid variables.$cyan_light;
     }
     
     .progress{

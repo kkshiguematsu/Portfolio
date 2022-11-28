@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../fontawesome/css/all.min.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#nav_scroll"  data-bs-offset="100" onload="carregar_Nav();carregar_Footer();verifica_Active();">
+<body onload="carregar_Nav();carregar_Footer();verifica_Scroll();">
     <header></header>
     
     <main>
-        <div class="contato-main d-flex align-items-center">
+        <section class="contato-main d-flex align-items-center" id="contato_nav">
             <div class="container">
                 <div class="row">
                     <div class="contato-main-form col-lg-8 p-5">
@@ -71,7 +71,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>

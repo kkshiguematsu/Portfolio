@@ -90,3 +90,17 @@ $backgrond-color-container: white;
         }
     }
 }
+
+.lista_contatos_icon{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    color: white;
+    padding: 0.75rem;
+    background-color: variables.$cyan_light;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 50%;
+    i{
+        font-size: 30px;
+    }
+}

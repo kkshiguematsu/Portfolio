@@ -24,6 +24,7 @@ main{
 @import "projetos";
 @import "projeto_canvas";
 @import "contato";
+@import "listagem_contato";
 @import "footer";
 
 $primary: variables.$cyan_light;
@@ -133,19 +134,9 @@ $accordion-button-active-bg: rgba(0, 0, 0, 0) !important;
 
 // ==================== TESTE =======================
 
-.lista_contatos{
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    color: white;
-    background-color: variables.$cyan_light;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    padding: 0.75rem;
-    border-radius: 50%;
-    i{
-        font-size: 30px;
-    }
-}
+
+
+
 
 @import "../bootstrap/scss/bootstrap.scss";
 

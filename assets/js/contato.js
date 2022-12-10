@@ -11,6 +11,7 @@ class Mensagem{
     
 }
 
+var mensagens = [];
 if (JSON.parse(localStorage.getItem("mensagem"))){
     mensagens = JSON.parse(localStorage.getItem("mensagem"));
 }else{
@@ -31,6 +32,4 @@ function salvar_form(){
     localStorage.setItem("mensagem",JSON.stringify(mensagens));
 }
 
-function limpar_lista(){
-    sessionStorage.clear();
-}
+

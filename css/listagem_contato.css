@@ -1,0 +1,32 @@
+.listagem_contatos {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 black;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+.listagem_contatos h2 {
+  position: relative;
+  padding: 1rem 2rem;
+  color: white;
+  background-color: #40aec3;
+  box-shadow: 0 0 5px 0 black;
+}
+.listagem_contatos .div_table_scroll {
+  overflow-y: scroll;
+}
+.listagem_contatos .div_table_scroll i {
+  color: #4a7988;
+  transition: 0.5s;
+}
+.listagem_contatos .div_table_scroll i:hover {
+  color: red;
+}
+.listagem_contatos .btn_limpar {
+  transition: 0.5s;
+}
+.listagem_contatos .btn_limpar:hover {
+  background-color: red !important;
+  border-color: red !important;
+}/*# sourceMappingURL=listagem_contato.css.map */

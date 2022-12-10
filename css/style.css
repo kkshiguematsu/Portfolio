@@ -362,6 +362,53 @@ main {
   border-bottom: 1px solid white;
 }
 
+.lista_contatos_icon {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  color: white;
+  padding: 0.75rem;
+  background-color: #40aec3;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 50%;
+}
+.lista_contatos_icon i {
+  font-size: 30px;
+}
+
+.listagem_contatos {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 black;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+.listagem_contatos h2, .listagem_contatos .h2 {
+  position: relative;
+  padding: 1rem 2rem;
+  color: white;
+  background-color: #40aec3;
+  box-shadow: 0 0 5px 0 black;
+}
+.listagem_contatos .div_table_scroll {
+  overflow-y: scroll;
+}
+.listagem_contatos .div_table_scroll i {
+  color: #4a7988;
+  transition: 0.5s;
+}
+.listagem_contatos .div_table_scroll i:hover {
+  color: red;
+}
+.listagem_contatos .btn_limpar {
+  transition: 0.5s;
+}
+.listagem_contatos .btn_limpar:hover {
+  background-color: red !important;
+  border-color: red !important;
+}
+
 .footer-area {
   margin-top: 3rem;
   background-color: #25242b;
@@ -527,20 +574,6 @@ section {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Rubik", sans-serif;
-}
-
-.lista_contatos {
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  color: white;
-  background-color: #40aec3;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  padding: 0.75rem;
-  border-radius: 50%;
-}
-.lista_contatos i {
-  font-size: 30px;
 }
 
 /*!

@@ -7,8 +7,6 @@ class Mensagem{
         this.telefone = telefone;
         this.comentario = comentario;
     }
-
-    
 }
 
 var mensagens = [];
@@ -25,6 +23,10 @@ function salvar_form(){
     const telefone = document.getElementById('form_contato_telefone').value;
     const comentario = document.getElementById('form_contato_comentario').value;
     
+    if (nome == '' || sobrenome == '' || email == '' || telefone == '' || comentario == '') {
+        return
+    }
+
     const mensagem = new Mensagem(nome,sobrenome,email,telefone,comentario);
 
     mensagens.push(mensagem);

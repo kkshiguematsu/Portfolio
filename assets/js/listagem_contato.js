@@ -16,7 +16,7 @@ function carregar_tabela(){
                 <td>${mensagem.email}</td>
                 <td>${mensagem.telefone}</td>
                 <td>${mensagem.comentario}</td>
-                <td><i class="fa-solid fa-trash"  onClick="deletar_linha()"></i></td>
+                <td><i class="fa-solid fa-trash" onClick="deletar_linha()"></i></td>
             </tr>
         `
         table.innerHTML += row;

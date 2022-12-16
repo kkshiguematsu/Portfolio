@@ -8,6 +8,7 @@ function carregar_tabela(){
     const table = document.getElementById("tabela_body");
 
     mensagens.forEach(mensagem => {
+        
         var row = `
             <tr>
                 <td class="mensagem_id" style="display:none;">${mensagem.id}</td>
@@ -28,33 +29,33 @@ function limpar_lista(){
     window.location.reload();
 }
 
-function deletar_linha(){
+function deletar_linha(int id){
     var mensagens = JSON.parse(localStorage.getItem("mensagem"));
 
-        $(document).on("click",".fa-trash",function(){
-            var id = $(this).closest("tr").find(".mensagem_id").text();
-            
-            for(var i=0; i<mensagens.length ;i++){
-                if(mensagens[i].id == id){
-                    if(i==0){
-                        mensagens.shift(); 
-                        var mensagens_new = mensagens;
-                        break;
-                    }
-                    if(i == mensagens.length-1){
-                        mensagens.pop(); 
-                        var mensagens_new = mensagens;
-                        break;
-                    }
-                    var mensagens_new = mensagens.splice(0,i);
-                    mensagens_new.pop();
-                    mensagens_new = mensagens_new.concat(mensagens);
-                    console.log(mensagens_new);
-                    break;
-                }
+    // $(document).on("click",".fa-trash",function(){
+        // var id = $(this).closest("tr").find(".mensagem_id").text();
+        
+    for(var i=0; i<mensagens.length ;i++){
+        if(mensagens[i].id == id){
+            if(i==0){
+                mensagens.shift(); 
+                var mensagens_new = mensagens;
+                break;
             }
-            
-            localStorage.setItem("mensagem",JSON.stringify(mensagens_new));
-            window.location.reload();
-        });
+            if(i == mensagens.length-1){
+                mensagens.pop(); 
+                var mensagens_new = mensagens;
+                break;
+            }
+            var mensagens_new = mensagens.splice(0,i);
+            mensagens_new.pop();
+            mensagens_new = mensagens_new.concat(mensagens);
+            console.log(mensagens_new);
+            break;
+        }
+    }
+        
+        localStorage.setItem("mensagem",JSON.stringify(mensagens_new));
+        window.location.reload();
+    // });
 }

@@ -29,7 +29,7 @@ function limpar_lista(){
     window.location.reload();
 }
 
-function deletar_linha(int id){
+function deletar_linha(){
     var mensagens = JSON.parse(localStorage.getItem("mensagem"));
 
     // $(document).on("click",".fa-trash",function(){
